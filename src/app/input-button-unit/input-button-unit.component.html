@@ -1,0 +1,8 @@
+<div class="todo-input">
+  <input
+         (keyup.enter)="changeTitle($event.target.value)"
+         #inputElement>
+  {{title}}
+  <button (click)="changeTitle(inputElement.value)">click</button>
+
+</div>
